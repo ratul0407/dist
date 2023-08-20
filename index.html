@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <!-- LINKING THE TAILWIND CSS FILE -->
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/index-6e88a5a2.css" />
+  </head>
+  <body class="font-inter">
+    <!-- nav bar -->
+    <nav>
+      <div
+        class="container flex justify-between items-center mx-auto p-4 md:py-16 md:px-24"
+      >
+        <!-- logo -->
+        <div>
+          <img src="assets/logo-2ae3d696.svg" alt="" />
+        </div>
+        <div class="inline-block md:hidden hamburger cursor-pointer relative">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+          <div>
+            <ul
+              class="hidden flex-col text-darkGrayishBlue bg-offWhite shadow-2xl rounded-2xl space-y-4 absolute top-20 p-10 -left-32 col-nav"
+            >
+              <a href="#">Home</a>
+              <a href="#">New</a>
+              <a href="#">Popular</a>
+              <a href="#">Trending</a>
+              <a href="#">Categories</a>
+            </ul>
+          </div>
+        </div>
+        <!-- list items -->
+        <div class="hidden md:block">
+          <ul class="flex space-x-8 text-darkGrayishBlue">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="container flex flex-col px-4 md:px-24 md:flex-row md:space-x-8 mx-auto"
+    >
+      <!-- flex container -->
+      <div class="mx-auto md:w-[65%]">
+        <div>
+          <!-- The main image section -->
+          <img
+            class="block md:hidden"
+            src="assets/image-web-3-mobile-83b3ba87.jpg"
+            alt=""
+          />
+          <img
+            class="hidden md:block"
+            src="assets/image-web-3-desktop-80273c80.jpg"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-x-24">
+          <!--  flex container for the main text -->
+          <div class="flex flex-col md:flex-row">
+            <!-- The heading section -->
+            <h2 class="text-5xl text-veryDarkBlue font-extrabold pt-8">
+              The Bright Future of Web 3.0?
+            </h2>
+          </div>
+          <div class="space-y-8">
+            <p class="text-darkGrayishBlue">
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button
+              class="uppercase px-10 py-3 bg-softRed text-white tracking-widest"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-veryDarkBlue text-white p-4 mt-10 md:mt-0 space-y-10 md:w-[35%]"
+      >
+        <!-- side bar -->
+        <div class="space-y-4">
+          <!-- first content -->
+          <h2 class="text-softOrange text-4xl font-bold">New</h2>
+          <div class="space-y-4">
+            <p class="text-2xl font-bold">Hydrogen VS Electric Cars</p>
+            <p class="text-grayishBlue">
+              Will Hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          <hr />
+        </div>
+        <div class="space-y-4">
+          <!-- Second content -->
+          <h2 class="text-2xl font-bold">The downsides of AI Artistry</h2>
+          <p class="text-grayishBlue">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <hr />
+        </div>
+        <div class="space-y-4 pb-4">
+          <!-- third content -->
+          <h2 class="text-2xl font-bold">Is VC Funding Drying Up?</h2>
+          <p class="text-grayishBlue">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </div>
+      </div>
+    </main>
+    <section>
+      <!-- cards section -->
+      <div
+        class="container px-4 pt-16 flex flex-col md:flex-row space-y-8 md:space-y-0 md:px-24 pb-10 mx-auto"
+      >
+        <!-- first card -->
+        <div class="flex space-x-4">
+          <div class="w-[30%]">
+            <img src="assets/image-retro-pcs-f5b001aa.jpg" alt="" />
+          </div>
+          <div class="space-y-2 w-[70%]">
+            <p class="text-[#c6c6ce] text-4xl font-extrabold">01</p>
+            <p class="text-veryDarkBlue font-semibold text-;g">
+              Reviving Retro PCs
+            </p>
+            <p class="text-darkGrayishBlue">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <!-- second card -->
+        <div class="flex space-x-4">
+          <div class="w-[30%]">
+            <img src="assets/image-top-laptops-bc1cbac8.jpg" alt="" />
+          </div>
+          <div class="space-y-2 w-[70%]">
+            <p class="text-[#c6c6ce] text-4xl font-extrabold">02</p>
+            <p class="text-veryDarkBlue font-bold text-lg">
+              Top 10 Laptops of 2022
+            </p>
+            <p class="text-darkGrayishBlue">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <!-- third card -->
+        <div class="flex space-x-4">
+          <div class="w-[30%]">
+            <img src="assets/image-gaming-growth-77ea9e27.jpg" alt="" />
+          </div>
+          <div class="space-y-2: w-[70%]">
+            <p class="text-[#c6c6ce] text-4xl font-extrabold">03</p>
+            <p class="text-veryDarkBlue font-bold text-lg">
+              The Growth of Gaming
+            </p>
+            <p class="text-darkGrayishBlue">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/script copy.js"></script>
+  </body>
+</html>
